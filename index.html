@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the page head - it contains info the browser uses to display the page
+      You won't see what's in the head in the page
+      Scroll down to the body element for the page content
+    -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Todo App</title>
+
+    <!-- Import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Main app -->
+    <div class="zoo-app">
+      <!-- Title -->
+      <h1 class="zoo-app__title">🛸 The Martian Zoo</h1>
+      <div class="zoo-app__wrapper">
+        <!-- Menu -->
+        <div class="zoo-app__menu">
+          <select class="zoo-app__select">
+            <option value="none" selected disabled hidden>Select an Animal</option>
+            <option value="🐯 Tiger">🐯 Tiger</option>
+            <option value="🐵 Monkey">🐵 Monkey</option>
+            <option value="🦉 Javascript Owl">🦉 Javascript Owl</option>
+            <option value="🐉 Dragon">🐉 Dragon</option>
+            <option value="🐸 Frog">🐸 Froggy</option>
+            <option value="🐕 Dog">🐕 Dog</option>
+          </select>
+          <button class="zoo-app__add-btn">🌀 Teleport</button>
+        </div>
+        <!-- Content -->
+        <h4 class="zoo-app__subtitle">📋 Manifest:</h4>
+        <div class="zoo-app__content">
+          <ul class="zoo-app__list">
+            <li class="zoo-item zoo-item--empty">
+              No animals on ship
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
